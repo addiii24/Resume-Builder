@@ -21,6 +21,6 @@ router.route("/logout").get(logoutuser);
 // @route GET /api/auth/get-me
 // @desc Get the current logged-in user's information
 // @access Private (requires authentication)
-router.route("/get-me").get(getMe);
+router.route("/get-me").get(authUser, getMe);
 
 export default router;
