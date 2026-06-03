@@ -1,4 +1,4 @@
-import {registeruser, loginuser, logoutuser, getMe} from "../Controller/user.controller.js";
+import { registeruser, loginuser, logoutuser, getMe } from "../Controller/user.controller.js";
 import express from "express";
 import authUser from "../Middleware/auth.moddleware.js";
 const router = express.Router();
@@ -18,9 +18,9 @@ router.route("/loginuser").post(loginuser);
 // @access Public
 router.route("/logout").get(logoutuser);
 
-// @route GET /api/auth/get-me
+// @route GET /api/auth/getme
 // @desc Get the current logged-in user's information
 // @access Private (requires authentication)
-router.route("/get-me").get(authUser, getMe);
+router.route("/getme").get(authUser, getMe);
 
 export default router;
