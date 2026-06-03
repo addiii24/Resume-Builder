@@ -1,3 +1,5 @@
+@use "./Style/button.scss";
+
 *{
     margin: 0;
     padding: 0;
@@ -14,3 +16,4 @@ html, body, #root {
 .highlight{
     color: #d20d3b;
 }
+
