@@ -1,10 +1,30 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../Hook/useAuth';
 
 const Register = () => {
 
-  const handleSubmit = (e) => {
+  const navigate = useNavigate()
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [username, setUsername] = useState("")
+  const {handleregister, loading} = useAuth()
+ 
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    await handleregister({username, email,password})
+    navigate("/home")
+  }
 
-    e.preventDefault();
+  if(loading){
+    return (
+      <main className="min-h-screen bg-slate-950 flex items-center justify-center p-4">
+        <div className="w-full max-w-sm bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-xl">
+          <h1 className="text-2xl font-bold text-white">Loading...</h1>
+        </div>
+      </main>
+    )
   }
 
   return (
@@ -30,6 +50,8 @@ const Register = () => {
               Username
             </label>
             <input
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
               type="text"
               id="username"
               name="username"
@@ -44,6 +66,8 @@ const Register = () => {
               Email
             </label>
             <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               type="email"
               id="email"
               name="email"
@@ -58,6 +82,8 @@ const Register = () => {
               Password
             </label>
             <input
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               type="password"
               id="password"
               name="password"
@@ -69,9 +95,10 @@ const Register = () => {
           {/* Submit */}
           <button
             type="submit"
-            className="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-lg py-2.5 text-sm transition-colors duration-150 cursor-pointer mt-2"
+            disabled={loading}
+            className="w-full bg-indigo-600 hover:bg-indigo-500 disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold rounded-lg py-2.5 text-sm transition-colors duration-150 cursor-pointer mt-2"
           >
-            Create account
+            {loading ? "Creating account..." : "Create account"}
           </button>
         </form>
 
