@@ -13,10 +13,10 @@ router.route("/registeruser").post(registeruser);
 // @access Public
 router.route("/loginuser").post(loginuser);
 
-// @route POST /api/auth/logout
+// @route POST /api/auth/logoutuser
 // @desc Log out the current user
 // @access Public
-router.route("/logout").get(logoutuser);
+router.route("/logoutuser").get(logoutuser);
 
 // @route GET /api/auth/getme
 // @desc Get the current logged-in user's information
