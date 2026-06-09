@@ -13,7 +13,7 @@ const Register = () => {
  
   const handleSubmit = async (e) => {
     e.preventDefault()
-    await handleregister({username, email,password})
+    await handleregister({username, email, password})
     navigate("/home")
   }
 
@@ -41,7 +41,7 @@ const Register = () => {
 
         {/* Form */}
         <form
-          onSubmit={handleSubmit()}
+         onSubmit={handleSubmit}
           className="space-y-5">
 
           {/* Username */}
