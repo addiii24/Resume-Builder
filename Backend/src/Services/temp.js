@@ -39,82 +39,35 @@ Alwar, Rajasthan, India
 `
 export const jobDescription = `
 Your potential, unleashed.
-
-
-
 India’s impact on the global economy has increased at an exponential rate and Deloitte presents an opportunity to unleash and realise your potential amongst cutting edge leaders, and organisations shaping the future of the region, and indeed, the world beyond.
-
-
-
 At Deloitte, your whole self to work, every day. Combine that with our drive to propel with purpose and you have the perfect playground to collaborate, innovate, grow, and make an impact that matters.
-
-
-
-The team
-
 The Digital Excellence Centre is responsible for building products and platforms for Deloitte India that focuses on providing extraordinary customer experience by putting design thinking with trailblazing technology in the center of what they do. The diverse team consists of subject matter experts, technology specialists, quality engineers, user experience researchers & designers, data scientists and product managers
-
-
-
 Your work profile
-
-
-
 As an Executive/Sr. Executive in our DEC Team you’ll build and nurture positive working relationships with teams and clients with the intention to exceed client expectations: -
-
-
-
 Responsibilities:
-
 Building reusable components and front-end libraries for future use.
 Translating design wireframes into high quality code.
 Ability to demonstrate proficiency in Responsive Design & Accessibility.
 Optimizing components for maximum performance on cross web platforms.
 Collaboration with UI/UX designers to design, develop, test & deploy solutions based on industry best practices & implementing new UX solutions.
 Build solutions, resolve design glitches & implement scalable solutions.
-
-
 As a prospective candidate, you should possess:
-
 1. 2-4 years of experience on React
-
 3. Exposure to popular ReactJS workflows such as Redux / Flux.
-
 4. Proficient with JavaScript/TypeScript and SASS/SCSS.
-
 5. Deep understanding of HTML DOM objects, CSS manipulations, Restful APIs.
-
 6. Proficient knowledge of code versioning tools such as GIT & CI/CD.
-
 7. Familiarity with MySQL, Node JS, API design & architecture.
-
 Hands-on experience with DevOps, AWS/Google Cloud/Azure.
-
-
 Desired qualifications
-
 Graduation
-
-
 Location and way of working
-
 Base location: Bangalore
 This profile does not involve extensive travel for work.
 Hybrid is our default way of working. Each domain has customised the hybrid approach to their unique needs.
-
-
 Your role as an Executive/Senior Executive
-
-
-
 We expect our people to embrace and live our purpose by challenging themselves to identify issues that are most important for our clients, our people, and for society.
-
-
-
 In addition to living our purpose, Senior Executive/AM across our organization must strive to be:
-
-
-
 Inspiring - Leading with integrity to build inclusion and motivation
 Committed to creating purpose - Creating a sense of vision and purpose
 Agile - Achieving high-quality results through collaboration and Team unity
@@ -132,5 +85,4 @@ Managing Quality & Risk - Delivering high quality results and mitigating risks w
 Strategic Thinking & Problem Solving - Applying strategic mindset to solve business issues and complex problems
 Tech Savvy - Leveraging ethical technology practices to deliver high impact for clients and for Deloitte
 Empathetic leadership and inclusivity - creating a safe and thriving environment where everyone's valued for who they are, use empathy to understand others to adapt our behaviours and attitudes to become more inclusive.
-
 `

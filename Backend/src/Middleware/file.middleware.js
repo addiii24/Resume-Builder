@@ -3,7 +3,7 @@ import multer from "multer";
 const upload = multer({
     storage:multer.memoryStorage(),
     limits : {
-        fileSize: 2*1024*1024 //3MB FILE
+        fileSize: 10*1024*1024 //3MB FILE
     },
     // fileFilter: (req, file, cb) => {
     //     if (file.mimetype.startsWith("application/pdf")) {
@@ -14,6 +14,6 @@ const upload = multer({
     // }
 });
 
-// const uploadMiddleware = upload.single("resume");
+const uploadMiddleware = upload.single("resume");
 
-export default upload;
+export default uploadMiddleware;
